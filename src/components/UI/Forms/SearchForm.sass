@@ -1,0 +1,51 @@
+.searchForm
+    width: 100%
+    position: relative
+    margin: 10px auto 30px
+    button
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 2
+        color: #1f0b2e
+        background: none
+        border: none
+        width: 50px
+        height: 100%
+        svg
+            position: absolute
+            font-size: 20px
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+    input
+        width: 100%
+        border-radius: 10px
+        padding: 15px 50px 15px 15px
+        border: none
+        box-shadow: 0 0 5px #1f0b2e inset
+        font-size: 16px
+
+.searchInputResults
+    width: 100%
+    background: #fff
+    padding: 15px
+    border-radius: 10px
+    box-shadow: 0 0 5px #1f0b2e
+    position: absolute
+    top: 60px
+    z-index: 999
+    max-height: 350px
+    a
+        display: block
+        width: 100%
+        margin-top: 10px
+        font-size: 16epx
+        text-decoration: none
+        color: #1f0b2e
+        &:first-child
+            margin-top: 0
+
+.searchInputResultsIns
+    max-height: 320px
+    overflow-y: auto

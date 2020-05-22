@@ -1,0 +1,38 @@
+$purple: #1f0b2e
+
+@keyframes show
+    0%
+        opacity: 0
+        top: 30px
+    100%
+        opacity: 1
+        top: 0px
+    
+.loginForm
+    width: 100%
+    padding: 30px 15px
+    border-radius: 10px
+    width: 100%
+    box-shadow: 0 0 5px $purple
+    color: $purple
+    overflow: hidden
+    position: relative
+    &.entered
+        animation: show 500ms ease-out forwards
+    form
+        margin-top: 20px
+    input
+        width: 100%
+        border-radius: 10px
+        height: 40px
+        border: none
+        box-shadow: 0 0 5px $purple inset
+        margin-top: 20px
+        padding: 0 15px
+        &:first-child
+            margin-top: 0
+        &[type='submit']
+            background: $purple
+            color: #fff
+    h2
+        text-align: center

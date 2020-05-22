@@ -1,0 +1,112 @@
+@keyframes show
+    0%
+        opacity: 0
+        top: 30px
+    100%
+        opacity: 1
+        top: 0px
+    
+.cityCard
+    border-radius: 10px
+    width: 100%
+    margin-top: 20px
+    box-shadow: 0 0 5px #1f0b2e
+    color: #fff
+    overflow: hidden
+    position: relative
+    opacity: 0
+    top: 30px
+    &.entered
+        animation: show 500ms ease-out forwards
+    &:nth-child(6n + 1)
+        .info
+            background-color: rgba(31, 11, 46, 0.9)
+        .link
+            a
+                color: rgba(31, 11, 46, 1)
+    &:nth-child(6n + 2)
+        .info
+            background-color: rgba(200, 47, 58, 0.9)
+        .link
+            a
+                color: rgba(200, 47, 58, 1)
+        &.entered
+            animation-delay: 200ms
+    &:nth-child(6n + 3)
+        .info
+            background-color: rgba(3, 166, 81, 0.9)
+        .link
+            a
+                color: rgba(3, 166, 81, 1)
+        &.entered
+            animation-delay: 350ms
+    &:nth-child(6n + 4)
+        .info
+            background-color: rgba(226, 34, 110, 0.9)
+        .link
+            a
+                color: rgba(226, 34, 110, 1)
+        &.entered
+            animation-delay: 500ms
+    &:nth-child(6n + 5)
+        .info
+            background-color: rgba(13, 136, 189, 0.9)
+        .link
+            a
+                color: rgba(13, 136, 189, 1)
+        &.entered
+            animation-delay: 650ms
+    &:nth-child(6n + 6)
+        .info
+            background-color: rgba(207, 117, 9, 0.9)
+        .link
+            a
+                color: rgba(207, 117, 9, 1)
+        &.entered
+            animation-delay: 800ms
+    .info
+        padding: 15px
+        width: 100%
+        background: url('../../../assets/map.png') no-repeat center
+        background-size: cover
+        position: relative
+    .openModal
+        position: absolute
+        right: 15px
+        top: 15px
+        font-size: 20px
+    .opacityCard
+        padding: 15px 0 0
+        background: none
+        opacity: 1
+        top: 0
+        .number
+            font-size: 18px
+            font-weight: 500
+        .name
+            font-size: 16px
+            font-weight: 400
+    .link
+        padding: 15px
+        background: #fff
+        a
+            text-decoration: none
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: center
+    small
+        margin-top: 20px
+        display: block
+
+.cityCardTitle
+    max-width: 90%
+    position: relative
+    display: block
+    &::after
+        content: ''
+        display: block
+        width: 40px
+        height: 2px
+        background: #fff
+        margin-top: 10px

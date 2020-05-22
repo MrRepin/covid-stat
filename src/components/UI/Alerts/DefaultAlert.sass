@@ -1,0 +1,25 @@
+.defaultAlert
+    position: fixed
+    z-index: 999
+    bottom: -200px
+    width: 100%
+    transition: all .3s ease-out
+    &.show
+        bottom: 20px
+
+.defaultAlertIns
+    background: #fff
+    border-radius: 10px
+    padding: 15px
+    box-shadow: 0 0 10px #c6bfcb
+    max-width: 320px
+    margin: 0 auto
+    position: relative
+    .close
+        position: absolute
+        top: 15px
+        right: 15px
+        line-height: 13px
+        font-size: 20px
+    .info
+        width: 90%

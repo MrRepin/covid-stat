@@ -1,0 +1,51 @@
+$purple: #1f0b2e
+
+@keyframes show
+    0%
+        opacity: 0
+        top: 30px
+    100%
+        opacity: 1
+        top: 0px
+    
+.newsCard
+    border-radius: 10px
+    width: 100%
+    margin-top: 20px
+    box-shadow: 0 0 5px $purple
+    color: $purple
+    overflow: hidden
+    position: relative
+    opacity: 0
+    top: 30px
+    &.entered
+        animation: show 500ms ease-out forwards
+    &:nth-child(6n + 2)
+        &.entered
+            animation-delay: 200ms
+    &:nth-child(6n + 3)
+        &.entered
+            animation-delay: 350ms
+    &:nth-child(6n + 4)
+        &.entered
+            animation-delay: 500ms
+    &:nth-child(6n + 5)
+        &.entered
+            animation-delay: 650ms
+    &:nth-child(6n + 6)
+        &.entered
+            animation-delay: 800ms
+    .info
+        padding: 15px
+    .link
+        padding: 0 15px
+        background: #fff
+        a
+            text-decoration: none
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: center
+            color: $purple
+            border-top: 1px solid $purple
+            padding: 15px 0
